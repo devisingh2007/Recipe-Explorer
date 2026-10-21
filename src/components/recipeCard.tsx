@@ -48,7 +48,7 @@ export default function RecipeCard({ recipe }: Props) {
                 </span>
             </div>
 
-            <div className="mt-2 min-w-0">
+            <div className="mt-2 min-w-0 mb-3">
                 <h2 className=" text-[17px] font-semibold leading-6  text-[#171923]">
                     {recipe.title}
                 </h2>
