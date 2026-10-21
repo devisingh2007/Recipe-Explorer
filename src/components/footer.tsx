@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="border-t border-[#e8b9aa] px-5 py-5">
-      <div className="mx-auto flex w-290 flex-col items-center justify-between gap-4 ">
+      <div className="mx-auto flex w-290 flex items-center justify-between gap-4 ">
         <p className="text-sm text-[#593f36]">
           &copy; 2025 Everyday Recipes. Functional culinary notebook.
         </p>
