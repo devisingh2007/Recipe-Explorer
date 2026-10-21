@@ -19,7 +19,7 @@ export default async function RecipeDetailsPage({ params }: Props) {
     <main className="min-h-screen bg-[#f8f8ff] text-[#171923]">
      
       <div className="border-b border-[#e8c7b9]">
-        <div className="mx-auto flex max-w-275 items-center justify-between gap-3 px-5 py-3 text-xs sm:text-sm">
+        <div className="mx-auto flex max-w-275 items-center justify-between gap-3 px-5 py-3 text-xs ">
           <div className="flex flex-wrap items-center gap-2">
             <Link href="/recipes" className="hover:text-[#c92d0b]">
               Recipes
@@ -32,10 +32,10 @@ export default async function RecipeDetailsPage({ params }: Props) {
 
           <Link
             href="/recipes"
-            className="shrink-0 hover:text-[#c92d0b]"
+            className="hover:text-[#c92d0b]"
           >
-            ← <span className="hidden sm:inline">Back to recipes</span>
-            <span className="sm:hidden">Back</span>
+            ← <span >Back to recipes</span>
+            <span >Back</span>
           </Link>
         </div>
       </div>
@@ -51,15 +51,15 @@ export default async function RecipeDetailsPage({ params }: Props) {
               <span>Culinary Notebook</span>
             </div>
 
-            <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h1 className="text-3xl font-semibold tracking-tight ">
               {data.title}
             </h1>
 
-            <p className="mt-4 max-w-3xl text-base leading-7 text-[#56372e] sm:text-lg">
+            <p className="mt-4 max-w-3xl text-base leading-7 text-[#56372e] ">
               {data.description}
             </p>
 
-            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3 border-t border-dashed border-[#e8c7b9] pt-4 text-sm">
+            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3 border-t  border-[#e8c7b9] pt-4 text-sm">
               <p>
                 <span className="text-[#906957]">Cuisine:</span>{" "}
                 {data.cuisine}
@@ -116,7 +116,7 @@ export default async function RecipeDetailsPage({ params }: Props) {
                   <input
                     type="checkbox"
                     id={`ingredient-${index}`}
-                    className="mt-1 h-4 w-4 shrink-0  accent-[#c92d0b]"
+                    className="mt-1 h-4 w-4  accent-[#c92d0b]"
                   />
                   <label
                     htmlFor={`ingredient-${index}`}
@@ -128,12 +128,12 @@ export default async function RecipeDetailsPage({ params }: Props) {
               ))}
             </ul>
 
-            <p className="mt-5 border-t border-dashed border-[#e8c7b9] pt-3 text-xs leading-5 text-[#906957]">
+            <p className="mt-5 border-t  border-[#e8c7b9] pt-3 text-xs leading-5 text-[#906957]">
               Tip: Check off items as you prepare your ingredients.
             </p>
           </div>
 
-          <div className="border border-[#e8bfb0] bg-white p-5 sm:p-6">
+          <div className="border border-[#e8bfb0] bg-white p-5 ">
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#e8c7b9] pb-4">
               <h2 className="text-xl font-semibold">
                 Methodology &amp; Execution
@@ -147,10 +147,10 @@ export default async function RecipeDetailsPage({ params }: Props) {
               {data.instructions.map((instruction, index) => (
                 <li
                   key={index}
-                  className="flex gap-4 border-b border-[#f0ded7] py-6 last:border-b-0"
+                  className="flex gap-4 border-b border-[#f0ded7] py-6 "
                 >
                   <span
-                    className={`flex h-7 w-7 shrink-0 items-center justify-center border text-xs font-medium `}
+                    className={`flex h-7 w-7 items-center justify-center border text-xs font-medium `}
                   >
                     {String(index + 1).padStart(2, "0")}
                   </span>
@@ -174,8 +174,8 @@ export default async function RecipeDetailsPage({ params }: Props) {
               </span>
 
               <Link
-                href={`/recipes/${data.id}/edit`}
-                className="font-medium text-[#b5260c] hover:underline"
+                href={``}
+                className="font-medium text-[#b5260c] "
               >
                 Edit recipe →
               </Link>
